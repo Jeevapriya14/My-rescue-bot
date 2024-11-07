@@ -29,16 +29,16 @@ function Login(){
   }
   return (
     <div className="login">
-      <h1 className='signup'>Sign up</h1>
+      <h1 className='heading'>Sign up</h1>
       <form action="POST">
         <input type="text" onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email' id=""></input>
         <input type='password' onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' id=""></input>
         <input type="submit" onClick={submit} />
       </form>
       <br />
-      <p>OR</p>
+      <p className='heading'>OR</p>
       <br />
-      <Link to="/">Login Page</Link>
+      <Link className="link" to="/">Login Page</Link>
     </div>
   )
 }

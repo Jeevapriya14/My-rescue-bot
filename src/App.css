@@ -1,6 +1,5 @@
+/* General App styling */
 .App {
-  text-align: center;
-  background-color:lightgray;
   padding: 50px;
   margin-top: 120px;
   margin-left: 80px;
@@ -10,12 +9,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -33,17 +26,20 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login{
+  background-color: lightgray;
+  
 }
-h1{
+.signup{
+  background-color: lightgray;
+  
+
+}
+.heading{
   color: white;
   text-align: center;
+  color: red;
+  
   
 }
 .login .heading, .login .signup {
@@ -79,15 +75,55 @@ h1{
   opacity: 0.8;
   background-color: green;
 }
-.link{
-  color: red;
-  
-}
-#tsparticles {
-  position: absolute;
+
+.head {
+  background-color: lightgrey;
+  padding: 5px;
+  overflow: hidden;
+  position: fixed;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  z-index: 0; /* Background layer */
+  z-index: 1000;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.head .navbar {
+  display: flex;
+  justify-content: center; /* Center navbar items */
+  width: 100%; /* Ensure navbar spans the full width */
+}
+
+.head .navbar .navbar-nav {
+  display: flex; /* Ensure that list items are laid out in a row */
+  justify-content: space-evenly; /* Space out the list items evenly */
+  width: 100%; /* Ensure the list spans the full width */
+  padding-left: 0; /* Remove default padding from the <ul> */
+  margin: 0; /* Remove default margin from the <ul> */
+}
+
+.head .navbar .nav-link {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0.5rem 1rem;
+  color: white; /* Set all navbar links text color to white */
+}
+
+.head .navbar .nav-link.active {
+  color: white; /* Ensure active link stays white */
+  background-color: rgba(0, 0, 0, 0.2); /* Light background for active link */
+}
+
+.head .navbar .nav-link:hover {
+  color: blue; /* On hover, the link text will turn blue */
+  transition: 0.2s;
+}
+
+/* Removed li color styling */
+li {
+  display: flex;
+}
+.link{
+  color: red;
+  margin-left: 47%;
 }

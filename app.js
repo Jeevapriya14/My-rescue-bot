@@ -2,12 +2,18 @@ const express=require('express')
 const collection=require('./mongo')
 const cors=require('cors')
 const app=express()
+var ejs=require('ejs')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
+app.use(express.static('public'))
+app.set('view engine','ejs');
 app.get("/",cors(),(req,res)=>{
 
 })
+app.get('/',function(req,res){
+    res.render('components/Home.js');
+});
 app.post("/",async(req,res)=>{
     const{email,password}=req.body
     try{
