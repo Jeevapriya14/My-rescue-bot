@@ -78,7 +78,7 @@
 
 .head {
   background-color: lightgrey;
-  padding: 5px;
+  padding: 0px;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -89,6 +89,7 @@
 }
 
 .head .navbar {
+  
   display: flex;
   justify-content: center; /* Center navbar items */
   width: 100%; /* Ensure navbar spans the full width */
@@ -106,6 +107,7 @@
   text-decoration: none;
   font-size: 17px;
   padding: 0.5rem 1rem;
+  padding: 0;;
   color: white; /* Set all navbar links text color to white */
 }
 
